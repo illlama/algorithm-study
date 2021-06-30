@@ -14,7 +14,7 @@ const toStructure = (text) => {
   let refinedText = text.replace(/[^\w]/g, '').toLowerCase().split('').sort();
   let structure = {};
   refinedText.map((c) => {
-    structure[c] = structure[c] ? structure[c] + 1 : 1;
+    structure[c] = structure[c] + 1 || 1;
   });
   return structure;
 };
