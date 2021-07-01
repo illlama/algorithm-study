@@ -1,4 +1,4 @@
-const strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+const strs = ["abcde"];
 
 const groupAnagrams = (strs) => {
   let ans = [];
