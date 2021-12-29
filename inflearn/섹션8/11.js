@@ -1,6 +1,11 @@
 const solution = (n) => {
-  if (n > 3) return;
-  console.log(123);
+  let answer;
+  const DFS = (n) => {
+    if (n === 1) return 1;
+    else return n * DFS(n - 1);
+  };
+  answer = DFS(5);
+  return answer;
 };
 
-solution(5);
+console.log(solution(5));
